@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="header">
+        <div class="nav_bar">
+            <ul>
+                <li><a class="active" href="#home">Section2 - Question 2</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="body">
+        <input class="input_text" type="text" id="input_data" (keyup)="search_catagory()" placeholder="Search...">
+
+        <table class="table_data" id="table_data">
+            <tr class="header">
+                <th style="width:100%;">Catagory Name</th>
+            </tr>
+            <tr *ngFor="let item of list_catagory; let i = index">
+                <td>{{ item }}</td>
+            </tr>
+        </table>
+    </div>
+    <div class="footer"></div>
+</div>
